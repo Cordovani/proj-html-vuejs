@@ -1,1 +1,93 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
 
+.container {
+  max-width: 1024px;
+  width: 100%;
+  display: flex;
+}
+
+.header-contacts {
+  height: 50px;
+  background-color: #21333e;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+
+.header-contacts div {
+  margin-right: 13px;
+}
+
+.header-contacts img {
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+}
+
+.empty {
+  width: 33%;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline;
+}
+
+nav {
+  position: absolute;
+  left: calc((100% - 1024px) / 2);
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  z-index: 1;
+  align-items: center;
+  height: 50px;
+}
+
+nav img {
+  flex-basis: 33%;
+}
+
+nav :nth-child(1) {
+  flex-basis: 33%;
+}
+
+.logo-color {
+  color: #00a5a5;
+  background-color: rgba(0, 105, 105, 0.5);
+}
+
+.header {
+  font-family: "Raleway";
+}
+
+.hero-section {
+  height: 850px;
+  background-image: url(/images/jumbo.jpg?c64b58c8cd2db0145fec0ae120b90ef4);
+  filter: brightness(50%);
+  background-position: -90px -210px;
+}
+
+.common-bt {
+  background-color: #058283;
+  border-radius: 3px;
+  border: none;
+  padding: 6px 13px;
+  color: white;
+}
+
+.transparent-bt {
+  background-color: transparent;
+  border-radius: 3px;
+  border: none;
+  padding: 6px 13px;
+  color: white;
+}

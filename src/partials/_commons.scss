@@ -1,3 +1,15 @@
-.container{
-    width: 1024px;
+
+// reset
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
 }
+
+.container{
+    max-width: $container_size;
+    width: 100%;
+    display: flex;
+}
+
+

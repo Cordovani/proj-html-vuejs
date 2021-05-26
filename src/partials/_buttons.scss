@@ -1,0 +1,15 @@
+.common-bt{
+    background-color: $bt_bg_color;
+    border-radius: $bt_corner;
+    border: none;
+    padding: 6px 13px;
+    color: white;
+}
+
+.transparent-bt{
+    background-color: transparent;
+    border-radius: $bt_corner;
+    border: none;
+    padding: 6px 13px;
+    color: white;
+}

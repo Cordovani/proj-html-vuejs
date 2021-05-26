@@ -8,21 +8,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="dist/style.css">
+    <link rel='stylesheet'
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+
 </head>
 
 <body>
 
-    <div>
+    <div id="mainApp">
         <!-- header con navbar e contatti-->
         <header>
             <!-- riga contatti -->
-            <!-- navbar con array di Vue -->
+            <div class="header-contacts">
+                <div class="container">
+                    <img src="/images/clock-8-16.png" alt="orologio">
+                    <span>Open Hours:Mon - Sat - 9:00 - 18:00</span>
+                    <span class="empty"></span>
+                    <img src="/images/phone-28-16.png" alt="telephone">
+                    <div>+1(305)1234-5678</div>
+                    <div>
+                    <img src="/images/envelope-closed-16.png" alt="envelope">    
+                        hello@esample.com
+                    </div>
+
+                    <!-- icone social -->
+                    <!-- <i class="fab fa-facebook-f"></i>
+                    <i>t</i>
+                    <i>l</i> -->
+                    <img src="/images/facebook-16.png" alt="facebook">
+                    <img src="/images/twitter-16.png" alt="twitter">
+                    <img src="/images/linkedin-16.png" alt="linkedin">
+                </div>
+            </div>
+            <nav class="container ">
+                <div>
+                    <span class="logo-color">NEX</span>GEN
+                </div>
+                <ul class="nav-link" v-for="link in navLink">
+                    <li>
+                        <h3>{{link.title}}</h3>
+                        <a :href="link.link"></a>
+                    </li>
+                </ul>
+                <button class="common-bt">GET IN TOUCH</button>
+            </nav>
         </header>
 
         <!-- hero section  -->
         <div class="hero-section">
-            Hero
             <!-- card prima statiche poi se ho tempo oggetti di Vue -->
         </div>
 
@@ -45,6 +79,8 @@
         </footer>
     </div>
 
+    <script src='https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js'></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

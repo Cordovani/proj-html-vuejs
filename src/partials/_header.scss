@@ -1,0 +1,59 @@
+.header-contacts{
+    height: 50px;
+    background-color: #21333e;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: $primary_text;
+}
+
+.header-contacts div {
+    margin-right: $standard_spacing;
+}
+
+.header-contacts img{
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+}
+
+.empty{
+    width: 33%;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+}
+
+nav {
+	position: absolute;
+    // non lo rileva nella compilazione $container_size
+	left: calc((100% - 1024px) / 2);
+	display: flex;
+	justify-content: space-between;
+    color: $primary_text;
+    z-index: 1;
+    align-items: center;
+    height: 50px;
+}
+
+nav img{
+    flex-basis: 33%;
+}
+
+nav :nth-child(1){
+    flex-basis: 33%;
+}
+
+.logo-color{
+    color: #00a5a5;
+    background-color: rgba(0,105,105,0.5);
+}
+
+.header{
+    font-family: $default_font;
+}
